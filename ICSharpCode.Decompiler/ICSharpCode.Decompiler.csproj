@@ -4,7 +4,7 @@
 
   <PropertyGroup>
     <TargetFramework Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0</TargetFramework>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;net46;net45</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;net46</TargetFrameworks>
 
     <Description>IL decompiler engine</Description>
     <Company>ic#code</Company>
@@ -49,8 +49,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FodyHelpers" Version="3.3.3" />
     <PackageReference Include="Humanizer.Core" Version="2.2.0" />
-    <PackageReference Include="Mono.Cecil" Version="0.10.0" />
     <PackageReference Include="System.Collections.Immutable" Version="1.3.1" />
     <PackageReference Include="System.ValueTuple" Version="4.3.0" />
   </ItemGroup>
